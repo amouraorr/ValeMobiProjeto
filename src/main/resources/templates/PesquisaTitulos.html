@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout.org"
+	layout:decorator="LayoutPadrao">
+
+<head>
+<meta charset="UTF-8" />
+<title>Pesquisa de titulos</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+
+<!-- Pagina pesquisa de titulo funcionando-->
+
+
+<body>
+
+	<section layout:fragment="conteudo">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h1 class="panel-title">
+					<B>Pesquisa de Título</B>
+				</h1>
+			</div>
+
+			<div class="panel-body">
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th class="text-center col-md-2">codigo</th>
+							<th class="text-center col-md-2">(DESC)Tipo de mercadoria</th>
+							<th class="text-center col-md-2">(DT) Nome da mercadoria</th>
+							<th class="text-righ">(VRl) Preço</th>
+							<th class="text-center col-md-2">(status)Tipo de negociação</th>
+							<th class="col-md-2"></th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<td colspan="6">Nenhum titulo foi encontrado</td>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+	</section>
+
+	<script src="/js/jquery-2.2.4.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>
